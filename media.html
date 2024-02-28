@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .Big{
+            background-color: red;
+            height: 768px;
+            width: 1020px;
+            display: grid;
+            /*grid-template-rows:250px 250px 250px;*/
+            grid-template-columns:340px 340px 340px;
+            
+        }
+        .box{
+            height: 165px;
+            width: 300px;
+            background-color: aqua;
+            margin:auto;
+            margin-left: 7%;
+
+        }
+
+        @media screen and (max-width: 785px) {
+            .Big {
+              
+              grid-template-columns:340px 340px;
+              margin: auto;
+              width: 700px;
+              height: 900px;
+            }
+            .box{
+                height: 165px;
+                width: 300px;
+                background-color: aqua;
+                margin:auto;
+                margin-left: 8.5%;
+                margin-top: 5px;
+    
+            }
+          }
+
+          @media screen and (max-width: 580px) {
+            .Big {
+              
+              grid-template-columns:340px;
+              margin: auto;
+              width: 380px;
+              height: 1570px;
+            }
+            .box{
+                height: 165px;
+                width: 300px;
+                background-color: aqua;
+                margin:auto;
+                margin-left: 8.5%;
+                margin-top: 5px;
+    
+            }
+          }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="Big">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
